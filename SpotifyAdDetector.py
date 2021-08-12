@@ -56,9 +56,9 @@ def restartSpotify():
     print("Ad skipped")
 
 
-spotifyUsername = "kelvin.jou@gmail.com"
-spotifyClientID = "7f9ae1e944ef41d587c8cf08b4d8350a"
-spotifyClientSecret = "3efec383557d42dd8fcefd3c0584f500"
+spotifyUsername = "YOUR_SPOTIFY_EMAIL"
+spotifyClientID = "CLIENT_ID"
+spotifyClientSecret = "CLIENT_SECRET"
 spotifyAccessScope = "user-read-currently-playing user-modify-playback-state"
 spotifyRedirectURI = "http://localhost:8888/callback"
 
