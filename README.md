@@ -11,6 +11,7 @@ Use the email and password you signed up Spotify with. (i.e. mine ends with @gma
 Additionally, for the `spotifyUsername` variable, paste in the email you signed up with for Spotify(just like step 1 but without the pwd)
 
 4. Go ahead and click `Edit Settings` in the app dashboard and fill in the uri: `http://localhost:8888/callback` under `redirect URIs` 
+You don't have to fill the other fields, because they are only required by iOS, Android, etc.
 Scroll to the bottom and click to the bottom and click "Save" or else it won't save(duh)
   Note: If you do change your `spotifyRedirectURI` value to something else(in the python file), you'll have to do it in the here as well.
 
@@ -23,5 +24,6 @@ Scroll to the bottom and click to the bottom and click "Save" or else it won't s
 Obvious stuff but: 
   - make sure you are running on the correct Python path that has the packages installed on.
   - MAC USERS ONLY: Go under `Security & Privacy` > `Privacy` > `Accessbility` and check "python" and "terminal" in the list view. 
+![Screen Shot 2021-08-11 at 10 47 07 PM](https://user-images.githubusercontent.com/63611619/129144558-03cb70b8-0b5c-4f06-bef4-2fb5356471a8.png)
 
 Have fun!
