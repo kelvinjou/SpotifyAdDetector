@@ -24,6 +24,7 @@ Scroll to the bottom and click to the bottom and click "Save" or else it won't s
 Obvious stuff but: 
   - make sure you are running on the correct Python path that has the packages installed on.
   - MAC USERS ONLY: Go under `Security & Privacy` > `Privacy` > `Accessbility` and check "python" and "terminal" in the list view. 
-![Screen Shot 2021-08-11 at 10 47 07 PM](https://user-images.githubusercontent.com/63611619/129144558-03cb70b8-0b5c-4f06-bef4-2fb5356471a8.png)
+![Screen Shot 2021-08-11 at 10 47 07 PM](https://user-images.githubusercontent.com/63611619/129144912-6eae2da1-b173-4fe7-b554-405fa491ee01.png)
 
-Have fun!
+
+Have fun! ;)
