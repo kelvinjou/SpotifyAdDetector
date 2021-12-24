@@ -6,9 +6,7 @@ from refresh import Refresh
 '''
 curl -H "Authorization: Basic N2Y5YWUxZTk0NGVmNDFkNTg3YzhjZjA4YjRkODM1MGE6ODkxYmJiMDAwMzcxNDliNmExNDZhMDU0NjZkZDViMjg=" -d grant_type=authorization_code -d code=AQBYqA1RD0Pz8xS40oubOybB5LSTt1Aiv0j1viKRr17WMBUW9jVHvJJNMzdbwsHUQgpOTeg9sUl5h6UYrgTFXKjZa7mYeL36xM8dUz9IhQUVTurNVCP0UBqry1NsT33eiiULYxGoiRXByb80dzHeG4mEBRbW6dZzrdPEPEhS4yQUu6c_gkLE2Gj3LIdvxjTlvqV92p-LhfLGLKvKe9B5r-QC4jpldqw4U3jjpqWobg -d redirect_uri=https://google.com https://accounts.spotify.com/api/token
 '''
- 
-start_time: float
-
+start_time = time.time()
 r = Refresh()
 
 SPOTIFY_GET_CURRENT_TRACK_URL = 'https://api.spotify.com/v1/me/player/currently-playing'
@@ -56,11 +54,14 @@ class SpotifyApplicationManager:
         print("Ad skipped")
 
 def get_current_track(access_token):
-    current_time = time.time()
-    if current_time - time.time() > 3500:
-        r = Refresh()
+    global start_time
+    print(time.time() - start_time)
+    if (time.time() - start_time) > 3500:
         SPOTIFY_ACCESS_TOKEN = r.refresh()
         print("Refreshed token")
+
+        # refreshing token expiration countdown
+        start_time = time.time()
     response = requests.get(
         SPOTIFY_GET_CURRENT_TRACK_URL, 
         headers = {
@@ -85,11 +86,13 @@ def main():
         )
 
 if __name__ == '__main__':
-    start_time = time.time()
+    
     print("Initial token")
     
     while True:
         main()
+        
+        # print("entered")
         time.sleep(2)
 
 
