@@ -1,5 +1,5 @@
 # SpotifyAdDetector
-Helps detect Spotify ads
+Helps detect Spotify ads and automatically skips them
 
 Steps for setting up: 
 1. Log into Spotify Developer Dashboard at https://developer.spotify.com/dashboard/
