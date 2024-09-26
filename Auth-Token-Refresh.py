@@ -2,7 +2,7 @@
 import requests
 import json
 
-refresh_token = "AQBU6846IgOA7cPRm_bWQUFmfMWW3CRfy41YM7dostWjZD3xMUfUkIp0H6kjh7ixJWymDVuybiUuHp8MWbNWuIkNMUnyJLn_x9DvYNfKS1HmEZTniTGjJ1xiKJ0oCaxeq1E"
+refresh_token = "TOKEN"
 base_64 = "N2Y5YWUxZTk0NGVmNDFkNTg3YzhjZjA4YjRkODM1MGE6ODkxYmJiMDAwMzcxNDliNmExNDZhMDU0NjZkZDViMjg="
 class Refresh:
     def __init__(self):
